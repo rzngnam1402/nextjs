@@ -1,3 +1,4 @@
+import Backdrop from "./components/Backdrop";
 import Todo from "./components/Todo";
 
 function App() {
