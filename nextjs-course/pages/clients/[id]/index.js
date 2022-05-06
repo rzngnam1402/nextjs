@@ -1,8 +1,21 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
 const ClientProjectsPage = () => {
+    const router = useRouter();
+    const loadProjectHandler = () => {
+        // load data
+        router.push({
+            pathname: '/clients/[id]/[clientProjectId]',
+            query: { id: 'max', clientProjectId: 'projecta' }
+        })
+    }
+
     return (
-        <h1>ClientProjectsPage</h1>
+        <div>
+            <h1>The Projects of a Given Client</h1>
+            <button onClick={loadProjectHandler}>Load Project A</button>
+        </div>
     )
 }
 
