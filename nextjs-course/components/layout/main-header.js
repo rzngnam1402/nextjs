@@ -11,7 +11,6 @@ const MainHeader = () => {
             <nav>
                 <ul>
                     <li className={classes.navigation}>
-                        <p>Hello</p>
                         <Link href='/events'>Browse All events</Link>
                     </li>
                 </ul>
